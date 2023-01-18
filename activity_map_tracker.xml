@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sbb"
+    tools:context=".MapTracker">
+
+  <EditText
+      android:id="@+id/et_source"
+      android:layout_width="296dp"
+      android:layout_height="59dp"
+      android:background="@color/purple_200"
+      android:hint="Enter Source Location"
+      android:padding="12dp"
+      android:textColorHint="#311B92"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/et_destination"
+      app:layout_constraintVertical_bias="0.117"
+      tools:ignore="MissingConstraints" />
+
+  <EditText
+      android:id="@+id/et_destination"
+      android:layout_width="296dp"
+      android:layout_height="62dp"
+      android:background="@color/purple_200"
+      android:hint="Enter Destination Location"
+      android:padding="8dp"
+      android:textColorHighlight="@color/purple_200"
+      android:textColorHint="#311B92"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.218" />
+
+  <Button
+      android:id="@+id/bt_track"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="display track"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/et_source"
+      app:layout_constraintVertical_bias="0.229" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

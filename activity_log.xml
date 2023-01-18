@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/up"
+    tools:context=".LogActivity">
+
+  <TextView
+      android:id="@+id/logoo"
+      android:layout_width="165dp"
+      android:layout_height="73dp"
+      android:background="@color/black"
+      android:text="LOGIN"
+      android:textColor="#FFFFFF"
+      android:textSize="55sp"
+      android:textStyle="normal|bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.092" />
+
+  <EditText
+      android:id="@+id/inputEmail"
+      android:layout_width="305dp"
+      android:layout_height="49dp"
+      android:ems="10"
+      android:hint="Enter Email"
+      android:inputType="textPersonName"
+      android:textColor="#FFFFFF"
+      android:textColorHint="@color/black"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/logoo"
+      app:layout_constraintVertical_bias="0.158" />
+
+  <EditText
+      android:id="@+id/inputPass"
+      android:layout_width="296dp"
+      android:layout_height="49dp"
+      android:ems="10"
+      android:hint="Enter Password"
+      android:inputType="textPersonName"
+      android:textColorHint="@color/black"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.495"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+      app:layout_constraintVertical_bias="0.121" />
+
+  <Button
+      android:id="@+id/btnLog"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/black"
+      android:text="Login"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/inputPass"
+      app:layout_constraintVertical_bias="0.292" />
+
+  <Switch
+      android:id="@+id/swToReg"
+      android:layout_width="256dp"
+      android:layout_height="48dp"
+      android:text="Don't have an account, register"
+      android:textColor="@color/white"
+      android:textSize="20sp"
+      android:textStyle="normal|bold|italic"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/btnLog"
+      app:layout_constraintStart_toStartOf="@+id/btnLog"
+      app:layout_constraintTop_toBottomOf="@+id/btnLog"
+      app:layout_constraintVertical_bias="0.217" />
+</androidx.constraintlayout.widget.ConstraintLayout>

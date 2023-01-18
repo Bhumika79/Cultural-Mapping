@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:map="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_margin="10dp"
+android:background="@color/black"
+android:orientation="vertical"
+tools:context=".MapsActivity" >
+
+  <TextView
+      android:id="@+id/intro"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/material_dynamic_neutral90"
+      android:padding="20dp"
+      android:text="Hotspots of the region"
+      android:textColor="@color/black"
+      android:textSize="35sp"
+      android:textStyle="bold" />
+
+  <FrameLayout
+      android:id="@+id/frame_layout"
+      android:layout_width="match_parent"
+      android:layout_height="561dp"
+      android:background="@color/material_dynamic_neutral90" />
+
+  <Button
+      android:id="@+id/letTravel"
+      android:layout_width="match_parent"
+      android:layout_height="69dp"
+      android:text="Let us travel"
+      android:textSize="24sp" />
+
+</LinearLayout>
