@@ -1,5 +1,5 @@
 package com.example.culturalmap;
-public class User {
+public class User{
     public String firstName;
     public String lastName;
     public String email;
